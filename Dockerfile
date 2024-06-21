@@ -6,6 +6,7 @@ WORKDIR /var/MPHGames
 RUN cd /var/MPHGames
 
 RUN git clone https://github.com/igornet0/RichGameiO.git
-RUN cd RichGameiO
 
-RUN python main.py
+RUN pip -r install RichGameiO/requirement.txt
+
+RUN python RichGameiO/main.py
