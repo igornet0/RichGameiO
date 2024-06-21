@@ -77,7 +77,6 @@ tonsdk==1.0.13
 TonTools==2.1.2
 tvm-valuetypes==0.0.12
 typer==0.12.3
-types-python-dateutil==2.9.0.20240316
 typing_extensions==4.12.2
 ujson==5.10.0
 urllib3==2.2.1
