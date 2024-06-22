@@ -12,6 +12,6 @@ WORKDIR /var/MPHGames/RichGameiO
 
 RUN pip install --upgrade pip
 RUN pip install mysql-connector-python
-RUN pip install -r requirement.txt
+RUN pip install -r requirements.txt
 
-CMD [ "python", "main.py" ]
+CMD ["python", "main.py"]
