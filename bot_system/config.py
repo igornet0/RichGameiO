@@ -1,6 +1,11 @@
 import os
 from dotenv import dotenv_values 
 
+if not ".env" in os.listdir():
+    with open(".env", "w") as f:
+        for key, value in os.environ.items():
+            f.write(key + '=' + value)
+
 dict_tokens = dotenv_values(".env")   
 
 TOKEN_BOT_GAME = dict_tokens['TOKEN_BOT_GAME']
