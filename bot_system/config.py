@@ -4,7 +4,7 @@ from dotenv import dotenv_values
 if not ".env" in os.listdir():
     with open(".env", "w") as f:
         for key, value in os.environ.items():
-            f.write(key + '=' + value)
+            f.write(f"{key}='{values}'")
 
 dict_tokens = dotenv_values(".env")   
 
